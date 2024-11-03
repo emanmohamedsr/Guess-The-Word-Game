@@ -42,6 +42,7 @@ body {
     color: #5c5c5c;
 }
 .guess-game .guess-area .inputs input{
+    color: #000;
     background-color: #fff;
     width: 30px;
     height: 30px;
