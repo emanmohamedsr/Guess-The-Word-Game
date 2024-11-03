@@ -8,7 +8,27 @@ document.querySelector('footer').innerHTML = `${gameName} Game Created By <span>
 // Game options
 const numberOfTries = 5;
 let currentTry = 1;
-const words = ['book', 'tree', 'lion' ,'apple', 'bread', 'chair', 'dance', 'eagle', 'flame', 'grass', 'house', 'jelly', 'lemon', 'orange', 'flower', 'jacket' , 'freedom', 'student', 'example'];
+const words = [
+    "BOOK",
+    "TREE",
+    "LION",
+    "APPLE",
+    "BREAD",
+    "CHAIR",
+    "DANCE",
+    "EAGLE",
+    "FLAME",
+    "GRASS",
+    "HOUSE",
+    "JELLY",
+    "LEMON",
+    "ORANGE",
+    "FLOWER",
+    "JACKET",
+    "FREEDOM",
+    "STUDENT",
+    "EXAMPLE",
+];
 const correctWord = getRandomWord();
 const numberOfLetters = correctWord.length; //dynmically generation for inputs upon the number of letters
 
@@ -55,7 +75,7 @@ function nextFocus() {
     letters[0].focus();     
     letters.forEach(function (letter, index) {
         letter.addEventListener('input', function () {
-            this.value = this.value.toLowerCase(); 
+            this.value = this.value.toUpperCase(); 
             const nextLetter = letters[index + 1];
             if (nextLetter) nextLetter.focus(); 
         });
