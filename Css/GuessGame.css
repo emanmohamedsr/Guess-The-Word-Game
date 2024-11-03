@@ -13,6 +13,8 @@ body {
     background-color: #eee;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
 }
 /* header */
 .header {
@@ -24,12 +26,13 @@ body {
 }
 /* guess game */
 .guess-game {
-    margin-bottom: 100px;
+    min-height: calc(100vh - (76px + 58.4));
     padding: 20px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 100px;
 }
 /* guess area */
 .guess-game .guess-area {
@@ -50,7 +53,7 @@ body {
     border-radius: 6px;
     border: none;
     border-bottom: 3px solid var(--main-colors-3);
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     color: var(--main-colors-3);
     cursor: pointer;
@@ -157,10 +160,11 @@ body {
 }
 /* footer */
 footer {
+    padding-top: 100px;
     color: #fff;
     background-color: var(--main-colors-3);
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     padding: 20px;
