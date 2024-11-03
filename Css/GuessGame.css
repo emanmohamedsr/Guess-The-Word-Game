@@ -26,7 +26,7 @@ body {
 }
 /* guess game */
 .guess-game {
-    min-height: calc(100vh - (76px + 58.4));
+    min-height: calc(100vh - (76px + 58.4px));
     padding: 20px;
     display: flex;
     flex-wrap: wrap-reverse;
@@ -45,6 +45,7 @@ body {
     color: #5c5c5c;
 }
 .guess-game .guess-area .inputs input{
+    padding: 2px;
     color: #000;
     background-color: #fff;
     width: 30px;
@@ -53,7 +54,7 @@ body {
     border-radius: 6px;
     border: none;
     border-bottom: 3px solid var(--main-colors-3);
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     color: var(--main-colors-3);
     cursor: pointer;
